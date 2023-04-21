@@ -4,7 +4,9 @@ import cv2
 import matplotlib.pyplot as plt
 from keras.datasets import cifar10
 from tqdm import tqdm
-from model.Resnet18 import ResNet18
+from model import Resnet18
+
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -23,7 +25,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 batch_size = 128
 learning_rate = 0.1
-num_epochs = 20
+num_epochs = 30
 n_classes = 10
 
 # load the CIFAR-10 dataset
@@ -67,7 +69,10 @@ test_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 
 
 
-model = ResNet18().to(device)
+#model = ResNet18().to(device)
+#
+model = Resnet18.ResNet18Add().to(device)
+
 
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(model.parameters(), lr=learning_rate, momentum=0.9, weight_decay=5e-4)
