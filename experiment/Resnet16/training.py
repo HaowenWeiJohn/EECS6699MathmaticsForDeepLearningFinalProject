@@ -25,7 +25,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 batch_size = config.batch_size
 learning_rate = config.learning_rate
 num_epochs = config.num_epochs
-n_classes = config.n_classes
+n_classes = config.cifar10_n_classes
 
 # load the CIFAR-10 dataset
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
