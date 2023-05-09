@@ -55,7 +55,7 @@ train_dataset = TensorDataset(x_train_tensor, y_train_tensor)
 test_dataset = TensorDataset(x_test_tensor, y_test_tensor)
 
 train_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
-test_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+test_dataloader = DataLoader(test_dataset, batch_size=batch_size, shuffle=True)
 
 # model = ResNet18().to(device)
 #
