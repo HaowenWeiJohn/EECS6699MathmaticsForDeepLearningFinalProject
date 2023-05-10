@@ -3,15 +3,15 @@ import pickle
 import matplotlib.pyplot as plt
 
 
-file_name1 = "experiment_cifar100/Resnet2/history.pickle"
-file_name2 = "experiment_cifar100/Resnet4/history.pickle"
-file_name3 = "experiment_cifar100/Resnet6/history.pickle"
-file_name4 = "experiment_cifar100/Resnet8/history.pickle"
-file_name5 = "experiment_cifar100/Resnet10/history.pickle"
-file_name6 = "experiment_cifar100/Resnet12/history.pickle"
-file_name7 = "experiment_cifar100/Resnet14/history.pickle"
-file_name8 = "experiment_cifar100/Resnet16/history.pickle"
-file_name9 = "experiment_cifar100/Resnet18Original/history.pickle"
+file_name1 = "experiment_cifar10/Resnet2/history.pickle"
+file_name2 = "experiment_cifar10/Resnet4/history.pickle"
+file_name3 = "experiment_cifar10/Resnet6/history.pickle"
+file_name4 = "experiment_cifar10/Resnet8/history.pickle"
+file_name5 = "experiment_cifar10/Resnet10/history.pickle"
+file_name6 = "experiment_cifar10/Resnet12/history.pickle"
+file_name7 = "experiment_cifar10/Resnet14/history.pickle"
+file_name8 = "experiment_cifar10/Resnet16/history.pickle"
+file_name9 = "experiment_cifar10/Resnet18Original/history.pickle"
 
 
 
